@@ -1,0 +1,48 @@
+\makeatletter
+\def\input@path{{../}}
+\makeatother
+\documentclass[../document.tex]{subfiles}
+\begin{document}
+
+\section{Random Failures in Uncorrelated Networks}
+
+$$ f_c \approx 1 - \frac{ 1 }{ \frac{ \langle k^2 \rangle }{ \langle k \rangle } - 1 } $$
+
+\subsection{}
+
+$$ \langle k \rangle = \mu, \langle k^2 \rangle = \mu^2 + \mu $$ \\
+
+$$ f_c \approx 1 - \frac{ 1 }{ \frac{ \mu^2 + \mu }{ \mu } - 1 } = 1 - \frac{ 1 }{ \mu + 1 - 1} = 1 - \frac{ 1 }{ \mu } $$ \\
+
+$ f_c $ depends on parameter $ \mu $: $ f_c \to \infty $ as $ \mu \to \infty $.
+
+\subsection{}
+
+Geometric distribution: $ \mathbf{psdfsjsdjfskgksjgshgsjkgsjkgsdjk} $
+
+Discrete exponential distribution: $ p_k = (1 - e^{ -\lambda }) e^{ \mathbf{-sajadksakdsak} }, p = e^{ -\lambda } $
+
+$$ \langle k \rangle = \frac{ 1-p }{ p }, \langle k^2 \rangle = \frac{ 1-p }{ p^2 } $$ \\
+
+$$ k = \frac{ \langle k^2 \rangle }{ \langle k \rangle } = \frac{ \frac{ 1-p }{ p^2 } }{ \frac{ 1-p }{ p } } = \frac{ p(1-p) }{ p^2(1-p) } = \frac{1}{p} $$ \\
+
+\begin{align*}
+f_c \approx 1 - \frac{ 1 }{ \frac{ \langle k^2 \rangle }{ \langle k \rangle } - 1 } &= 1 - \frac{1}{ \frac{ 1 }{ e^{ -\lambda } - 1} } \\ \\
+&= 1 - \frac{ 1 }{ \frac{ 1 - e^{ -\lambda } }{ e^{ -\lambda } } } \\ \\
+&= 1 - \frac{ e^{ -\lambda } }{ 1 - r^{ -\lambda } }
+\end{align*}
+
+$ f_c \to 1 $ as $ \lambda \to \infty $.
+
+\subsection{}
+
+\begin{alignat*}{2}
+\langle k \rangle &= \sum\limits^{k_{max}}_{k=k_{min}} k p_k   &&= k_0 \\
+\langle k \rangle &= \sum\limits^{k_{max}}_{k=k_{min}} k^2 p_k &&= k_0^2
+\end{alignat*} \\
+
+$ f_c \approx 1 - \frac{ 1 }{ \frac{ k^2_0 }{ k_0 } - 1 } = 1 - \frac{ 1 }{ k_0 - 1 } $ \\ \\
+
+See: poisson distribution
+
+\end{document}

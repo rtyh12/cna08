@@ -1,0 +1,36 @@
+\makeatletter
+\def\input@path{{../}}
+\makeatother
+\documentclass[../document.tex]{subfiles}
+
+\begin{document}
+
+\section{Molloy-Reed Criterion}
+\subsection{}
+Kronecker delta = $ \delta_{ig} =
+\begin{cases}
+  0, \, i \neq j \\    
+  1, \, i =  j    
+\end{cases} $
+
+\begin{alignat*}{2}
+\langle k \rangle    &=  \sum\limits^3_{k=1} k p_k    &&=  p_1 + 2 p_2 + 3 p_3 \\
+\langle k^2 \rangle  &=  \sum\limits^3_{k=1} k^2 p_k  &&=  p_1 + 4 p_2 + 9 p_3
+\end{alignat*}
+
+\subsection{}
+\begin{align*}
+&k = \frac{ \langle k^2 \rangle }{ \langle k \rangle } > 2      \\ \\
+&\iff \frac{ p_1 + 4 p_2 + 9 p_3 }{ p_1 + 2 p_2 + 3 p_3 } > 2   \\ \\
+&\iff p_1 + 9 p_3 > 2 p_1 + 6 p_3                               \\ \\
+&\iff 3 p_3 > p_1
+\end{align*}
+
+\subsection{}
+$ p_1 < 3p_3 \iff \frac{p_1}{3} < p_3 $ \\
+
+The probability that a node has degree 1 should be 3 times smaller than the probability that a node has degree 3. Therefore the network is dense, and most nodes are connected to multiple other nodes, few nodes with only one link. \\
+
+$ p_2 $ is irrelevant because $ k = 2 $ is the ``critical regime''. Slide 8-20: for a network to have a giant component most nodes that belong to it must be connected to at least two other nodes.
+
+\end{document}

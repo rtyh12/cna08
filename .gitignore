@@ -1,0 +1,12 @@
+# ignore jupyter garbage
+.ipynb_checkpoints
+
+# ignore latex garbage
+*.aux
+*.log
+*.out
+*.synctex.gz
+
+data/*_o       # use the "_o" suffix for temporary files
+
+tex/*.pdf      # ignore pdfs in the tex folder
